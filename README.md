@@ -123,4 +123,4 @@ Install nodemon globally:
 
 ### To test Fastify connection with the database using curl
 
-1. [Stack Overflow answer](https://stackoverflow.com/a/16870452).
+1. [Stack Overflow answer](https://stackoverflow.com/a/16870452)
