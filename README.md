@@ -14,7 +14,9 @@ This repository documents a CRUD exercise performed as part of a training to lea
 
 . Knex
 
-For more information, please, see the _package.json_ file. Run _npm install_ to install the dependencies within this project.
+For more information, please, see the _package.json_ file.
+
+Run _npm install_ to install the dependencies within this project.
 
 ## Useful commands
 
