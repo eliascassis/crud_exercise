@@ -1,10 +1,13 @@
 "use strict";
 
 module.exports = async function (fastify, opts) {
-  fastify.post("/auth", (request, reply) => {
+  fastify.post("/auth", async (request, reply) => {
+    const userId = await fastify.selectUserIdByNameAndPassword(
+      request.body.name,
+      request.body.password
+    );
     const token = fastify.jwt.sign({
-      name: request.body.name,
-      password: request.body.password,
+      userId: userId,
     });
     reply.send({ token });
   });
