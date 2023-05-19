@@ -119,13 +119,19 @@ Install nodemon globally:
 
 1. [Fastify official documentation](https://www.fastify.io/docs/latest/)
 
+2. [Fastify REST API](https://progressivecoder.com/creating-a-fastify-rest-api/)
+
 ### Knex
 
 1. [Knex official guide](https://knexjs.org/guide/)
 
+2. [Migration CLI](https://knexjs.org/guide/migrations.html#migration-cli)
+
 ### Postgres
 
 1. [Postgres official reference](https://www.postgresql.org/docs/)
+
+2. [Fastify + Postgres](https://edisondevadoss.medium.com/node-fastify-with-postgresql-3e0e78692185)
 
 ### To install nvm and node
 
@@ -134,3 +140,9 @@ Install nodemon globally:
 ### To test Fastify connection with the database using curl
 
 1. [Stack Overflow answer](https://stackoverflow.com/a/16870452)
+
+### Auth (jwt token)
+
+1. [Jwt authentication with Fastfy (simplified)](https://progressivecoder.com/fastify-jwt-authentication/)
+
+2. [JWT official](https://jwt.io/)
