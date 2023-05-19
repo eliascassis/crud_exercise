@@ -1,8 +1,16 @@
 {
   "dependencies": {
     "@fastify/postgres": "^5.2.0",
+    "autoload": "^0.1.2",
+    "dotenv": "^16.0.3",
     "fastify": "^4.17.0",
+    "fastify-autoload": "^3.13.0",
+    "fastify-jwt": "^4.2.0",
+    "fastify-plugin": "^4.5.0",
     "knex": "^2.4.2",
     "pg": "^8.11.0"
+  },
+  "scripts": {
+    "dev": "fastify start -w -l info -P app.js"
   }
 }
