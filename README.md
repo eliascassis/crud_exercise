@@ -10,6 +10,16 @@ This repository documents a CRUD exercise performed as part of a training to lea
 
 . Fastify/postgres
 
+. Fastify/jwt
+
+. Fastify/plugin
+
+. Fastify/autoload
+
+. Fastify/cli
+
+. Dotenv
+
 . pg
 
 . Knex
