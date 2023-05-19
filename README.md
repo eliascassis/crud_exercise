@@ -18,9 +18,9 @@ This repository documents a CRUD exercise performed as part of a training to lea
 
 . Fastify/cli
 
-. Dotenv
-
 . pg
+
+. Dotenv
 
 . Knex
 
