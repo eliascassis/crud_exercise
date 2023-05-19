@@ -12,4 +12,8 @@ module.exports = async function (fastify, opts) {
     dir: path.join(__dirname, "routes"),
     options: Object.assign({}, opts),
   });
+  fastify.register(AutoLoad, {
+    dir: path.join(__dirname, "utils"),
+    options: Object.assign({}, opts),
+  });
 };
