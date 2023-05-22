@@ -31,4 +31,16 @@ module.exports = async function (fastify, opts) {
       );
     }
   );
+  fastify.put(
+    "/user/:user_id/password",
+    { onRequest: [fastify.authenticate] },
+    (request, reply) => {
+      fastify.pg.query(
+        `UPDATE "user" SET password = '${request.body.password}' WHERE id = '${request.params.user_id}' AND password = '${request.body.old_password}' RETURNING name, email, phone`,
+        function onResult(err, result) {
+          reply.send(err || result.rows);
+        }
+      );
+    }
+  );
 };
