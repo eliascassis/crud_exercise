@@ -5,9 +5,9 @@ const fp = require("fastify-plugin");
 module.exports = fp(function (fastify, opts, done) {
   fastify.decorate(
     "selectUserIdByNameAndPassword",
-    async function (name, password) {
+    async function (email, password) {
       const result = await fastify.pg.query(
-        `SELECT id FROM "user" WHERE name = '${name}' AND password = '${password}'`
+        `SELECT id FROM "user" WHERE email = '${email}' AND password = '${password}'`
       );
       return result.rows[0].id;
     }
