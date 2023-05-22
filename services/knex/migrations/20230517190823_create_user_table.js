@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("user", function (table) {
     table.uuid("id").primary().notNullable();
     table.string("name", 255).notNullable().unique();
-    table.string("email", 255).notNullable();
+    table.string("email", 255).notNullable().unique();
     table.string("phone", 255);
     table.string("password", 255).notNullable();
   });
