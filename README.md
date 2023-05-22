@@ -137,10 +137,6 @@ Install nodemon globally:
 
 1. [NVM github](https://github.com/nvm-sh/nvm)
 
-### To test Fastify connection with the database using curl
-
-1. [Stack Overflow answer](https://stackoverflow.com/a/16870452)
-
 ### Auth (jwt token)
 
 1. [Jwt authentication with Fastfy (simplified)](https://progressivecoder.com/fastify-jwt-authentication/)
