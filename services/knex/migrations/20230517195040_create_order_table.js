@@ -4,6 +4,7 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("order", function (table) {
+    table.increments("id").primary().notNullable();
     table.uuid("user_id").notNullable();
     table.foreign("user_id").references("user.id");
     table.string("item", 255).notNullable();
